@@ -16,6 +16,76 @@ body{
     
 }
 
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 0.5rem 10.5rem; /* Padding for spacing */
+  }
+  
+  .navbar-brand {
+    font-family: 'Lato', sans-serif; /* Match site font */
+    font-weight: 900; /* Bold font for branding */
+    font-size: 2.5rem; /* Slightly larger text */
+    color: #343a40; /* Dark color for contrast */
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove default border */
+  }
+  
+  .navbar-toggler-icon {
+    color: #343a40; /* Match brand color */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 1rem; /* Space between nav items */
+  }
+  
+  
+  /* Button Styles */
+.navbar-nav .btn {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem; /* Add more padding for a better click area */
+    font-size: 1.5rem; /* Slightly smaller font size */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Optional: Capitalize letters */
+    border-radius: 25px; /* Rounded button */
+    transition: all 0.3s ease; /* Smooth hover animation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar-nav .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .navbar-nav .btn:focus {
+    outline: none; /* Remove focus border */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Add focus effect */
+  }
+  
+    
+  /* Mobile Menu Adjustments */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center; /* Center items for smaller screens */
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 0; /* Remove spacing in vertical layout */
+      margin-bottom: 1rem; /* Space between items */
+    }
+  }
+  
+
 .main-title{
     text-align: center;
     margin-top: 4rem;
@@ -86,7 +156,7 @@ svg{
     height: 35px;
     line-height: 35px;
     background-color: #f5f5f5;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 @keyframes clockHand{
